@@ -22,12 +22,12 @@ def main():
         with st.expander("Festival Data"):
             st.dataframe(festivals)
             
-        fig = px.scatter_mapbox(festivals, lat ='Latitude', lon = 'Longitude',
+        fig = px.scatter_map(festivals, lat ='Latitude', lon = 'Longitude',
                                 hover_name='Festival_Name', hover_data='Country',
                                 zoom= 1, height= 700, color_discrete_sequence=['magenta'], width= 700,
                                 center={'lat':10,'lon': -50}
                                 )            
-        fig.update_layout(mapbox_style = "open-street-map")
+        fig.update_layout(map_style = "open-street-map")
         st.plotly_chart(fig)
         
         st.header("High Grossing Festivals")
