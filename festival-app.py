@@ -1,7 +1,6 @@
 # imports ...
 import streamlit as st
 import pandas as pd
-import contextily as ctx
 import plotly.express as px
 
 # importing csv 
